@@ -9,23 +9,57 @@
 /* Begin PBXBuildFile section */
 		3D20EEBB29FA67710022608D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEBA29FA67710022608D /* AppDelegate.swift */; };
 		3D20EEBD29FA67710022608D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEBC29FA67710022608D /* SceneDelegate.swift */; };
-		3D20EEBF29FA67710022608D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEBE29FA67710022608D /* ViewController.swift */; };
+		3D20EEBF29FA67710022608D /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEBE29FA67710022608D /* VerificationViewController.swift */; };
 		3D20EEC229FA67710022608D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D20EEC029FA67710022608D /* Main.storyboard */; };
 		3D20EEC529FA67710022608D /* Xor_AthocDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEC329FA67710022608D /* Xor_AthocDemo.xcdatamodeld */; };
 		3D20EEC729FA67740022608D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D20EEC629FA67740022608D /* Assets.xcassets */; };
 		3D20EECA29FA67740022608D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D20EEC829FA67740022608D /* LaunchScreen.storyboard */; };
+		3D20EED729FA67F20022608D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EED629FA67F20022608D /* RegistrationViewModel.swift */; };
+		3D20EEDB29FB89950022608D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEDA29FB89950022608D /* RegistrationViewController.swift */; };
+		3D20EEDD29FBF1500022608D /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20EEDC29FBF1500022608D /* VerificationViewModel.swift */; };
+		3D4A5DB429FC3665002B0280 /* ADValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DB329FC3665002B0280 /* ADValidator.swift */; };
+		3D4A5DB629FC7637002B0280 /* ADNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DB529FC7637002B0280 /* ADNavigator.swift */; };
+		3D4A5DBB29FCFDDA002B0280 /* ADAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DBA29FCFDDA002B0280 /* ADAPIService.swift */; };
+		3D4A5DBD29FD0380002B0280 /* ADUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DBC29FD0380002B0280 /* ADUtils.swift */; };
+		3D4A5DC129FD0C3B002B0280 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A5DC029FD0C3B002B0280 /* Dashboard.storyboard */; };
+		3D4A5DC329FD0CF6002B0280 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DC229FD0CF6002B0280 /* DashboardViewModel.swift */; };
+		3D4A5DC629FD0D35002B0280 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DC529FD0D35002B0280 /* DashboardViewController.swift */; };
+		3D4A5DC929FD10E5002B0280 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DC829FD10E5002B0280 /* UIWindow+Extension.swift */; };
+		3D4A5DD029FD1B3E002B0280 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DCE29FD1B3E002B0280 /* User+CoreDataClass.swift */; };
+		3D4A5DD129FD1B3E002B0280 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DCF29FD1B3E002B0280 /* User+CoreDataProperties.swift */; };
+		3D4A5DD429FD1EE6002B0280 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DD329FD1EE6002B0280 /* CoreDataStack.swift */; };
+		3D4A5DD629FD1FD0002B0280 /* ADDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DD529FD1FD0002B0280 /* ADDataStore.swift */; };
+		3D4A5DDD29FD36E4002B0280 /* ContactType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DDC29FD36E4002B0280 /* ContactType.swift */; };
+		3D4A5DE029FD3776002B0280 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5DDF29FD3776002B0280 /* Rule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D20EEB729FA67710022608D /* Xor-AthocDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xor-AthocDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D20EEBA29FA67710022608D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D20EEBC29FA67710022608D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D20EEBE29FA67710022608D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D20EEBE29FA67710022608D /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		3D20EEC129FA67710022608D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D20EEC429FA67710022608D /* Xor_AthocDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Xor_AthocDemo.xcdatamodel; sourceTree = "<group>"; };
 		3D20EEC629FA67740022608D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D20EEC929FA67740022608D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D20EECB29FA67740022608D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D20EED629FA67F20022608D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		3D20EEDA29FB89950022608D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		3D20EEDC29FBF1500022608D /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
+		3D4A5DB329FC3665002B0280 /* ADValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADValidator.swift; sourceTree = "<group>"; };
+		3D4A5DB529FC7637002B0280 /* ADNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADNavigator.swift; sourceTree = "<group>"; };
+		3D4A5DBA29FCFDDA002B0280 /* ADAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADAPIService.swift; sourceTree = "<group>"; };
+		3D4A5DBC29FD0380002B0280 /* ADUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADUtils.swift; sourceTree = "<group>"; };
+		3D4A5DC029FD0C3B002B0280 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		3D4A5DC229FD0CF6002B0280 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		3D4A5DC529FD0D35002B0280 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = "Xor-AthocDemo/Module/DashBoard/View/DashboardViewController.swift"; sourceTree = SOURCE_ROOT; };
+		3D4A5DC829FD10E5002B0280 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		3D4A5DCE29FD1B3E002B0280 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3D4A5DCF29FD1B3E002B0280 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3D4A5DD329FD1EE6002B0280 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3D4A5DD529FD1FD0002B0280 /* ADDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADDataStore.swift; sourceTree = "<group>"; };
+		3D4A5DDC29FD36E4002B0280 /* ContactType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactType.swift; sourceTree = "<group>"; };
+		3D4A5DDF29FD3776002B0280 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +92,145 @@
 		3D20EEB929FA67710022608D /* Xor-AthocDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D4A5DDA29FD36B9002B0280 /* Common */,
+				3D4A5DD229FD1EB9002B0280 /* CoreDataModel */,
+				3D4A5DC729FD10D3002B0280 /* Extensions */,
+				3D4A5DB929FCFDB9002B0280 /* Services */,
+				3D4A5DB229FC364F002B0280 /* Helpers */,
+				3D20EED129FA67860022608D /* Module */,
 				3D20EEBA29FA67710022608D /* AppDelegate.swift */,
 				3D20EEBC29FA67710022608D /* SceneDelegate.swift */,
-				3D20EEBE29FA67710022608D /* ViewController.swift */,
-				3D20EEC029FA67710022608D /* Main.storyboard */,
 				3D20EEC629FA67740022608D /* Assets.xcassets */,
 				3D20EEC829FA67740022608D /* LaunchScreen.storyboard */,
 				3D20EECB29FA67740022608D /* Info.plist */,
 				3D20EEC329FA67710022608D /* Xor_AthocDemo.xcdatamodeld */,
 			);
 			path = "Xor-AthocDemo";
+			sourceTree = "<group>";
+		};
+		3D20EED129FA67860022608D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DBE29FD0BD7002B0280 /* DashBoard */,
+				3D20EED229FA679C0022608D /* OnBoarding */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3D20EED229FA679C0022608D /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				3D20EED429FA67C60022608D /* ViewModel */,
+				3D20EED329FA67BA0022608D /* View */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		3D20EED329FA67BA0022608D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D20EEC029FA67710022608D /* Main.storyboard */,
+				3D20EEBE29FA67710022608D /* VerificationViewController.swift */,
+				3D20EEDA29FB89950022608D /* RegistrationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D20EED429FA67C60022608D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D20EED629FA67F20022608D /* RegistrationViewModel.swift */,
+				3D20EEDC29FBF1500022608D /* VerificationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D4A5DB229FC364F002B0280 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DDE29FD375A002B0280 /* Validator */,
+				3D4A5DD329FD1EE6002B0280 /* CoreDataStack.swift */,
+				3D4A5DB529FC7637002B0280 /* ADNavigator.swift */,
+				3D4A5DBC29FD0380002B0280 /* ADUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D4A5DB929FCFDB9002B0280 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DBA29FCFDDA002B0280 /* ADAPIService.swift */,
+				3D4A5DD529FD1FD0002B0280 /* ADDataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3D4A5DBE29FD0BD7002B0280 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DC429FD0D1F002B0280 /* ViewModel */,
+				3D4A5DBF29FD0C0C002B0280 /* View */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		3D4A5DBF29FD0C0C002B0280 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DC529FD0D35002B0280 /* DashboardViewController.swift */,
+				3D4A5DC029FD0C3B002B0280 /* Dashboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D4A5DC429FD0D1F002B0280 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DC229FD0CF6002B0280 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D4A5DC729FD10D3002B0280 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DC829FD10E5002B0280 /* UIWindow+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D4A5DD229FD1EB9002B0280 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DCE29FD1B3E002B0280 /* User+CoreDataClass.swift */,
+				3D4A5DCF29FD1B3E002B0280 /* User+CoreDataProperties.swift */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		3D4A5DDA29FD36B9002B0280 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DDB29FD36CB002B0280 /* Enums */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D4A5DDB29FD36CB002B0280 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DDC29FD36E4002B0280 /* ContactType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		3D4A5DDE29FD375A002B0280 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A5DB329FC3665002B0280 /* ADValidator.swift */,
+				3D4A5DDF29FD3776002B0280 /* Rule.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +260,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
@@ -131,6 +295,7 @@
 				3D20EECA29FA67740022608D /* LaunchScreen.storyboard in Resources */,
 				3D20EEC729FA67740022608D /* Assets.xcassets in Resources */,
 				3D20EEC229FA67710022608D /* Main.storyboard in Resources */,
+				3D4A5DC129FD0C3B002B0280 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +306,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D20EEBF29FA67710022608D /* ViewController.swift in Sources */,
+				3D4A5DD429FD1EE6002B0280 /* CoreDataStack.swift in Sources */,
+				3D4A5DE029FD3776002B0280 /* Rule.swift in Sources */,
+				3D4A5DB429FC3665002B0280 /* ADValidator.swift in Sources */,
+				3D4A5DDD29FD36E4002B0280 /* ContactType.swift in Sources */,
+				3D4A5DC629FD0D35002B0280 /* DashboardViewController.swift in Sources */,
+				3D4A5DD129FD1B3E002B0280 /* User+CoreDataProperties.swift in Sources */,
+				3D20EEDB29FB89950022608D /* RegistrationViewController.swift in Sources */,
+				3D4A5DBD29FD0380002B0280 /* ADUtils.swift in Sources */,
+				3D20EED729FA67F20022608D /* RegistrationViewModel.swift in Sources */,
+				3D4A5DD629FD1FD0002B0280 /* ADDataStore.swift in Sources */,
+				3D20EEBF29FA67710022608D /* VerificationViewController.swift in Sources */,
 				3D20EEBB29FA67710022608D /* AppDelegate.swift in Sources */,
+				3D20EEDD29FBF1500022608D /* VerificationViewModel.swift in Sources */,
+				3D4A5DC329FD0CF6002B0280 /* DashboardViewModel.swift in Sources */,
 				3D20EEC529FA67710022608D /* Xor_AthocDemo.xcdatamodeld in Sources */,
+				3D4A5DB629FC7637002B0280 /* ADNavigator.swift in Sources */,
+				3D4A5DC929FD10E5002B0280 /* UIWindow+Extension.swift in Sources */,
+				3D4A5DBB29FCFDDA002B0280 /* ADAPIService.swift in Sources */,
 				3D20EEBD29FA67710022608D /* SceneDelegate.swift in Sources */,
+				3D4A5DD029FD1B3E002B0280 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
