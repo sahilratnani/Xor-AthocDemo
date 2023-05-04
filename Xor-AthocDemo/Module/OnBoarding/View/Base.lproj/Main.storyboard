@@ -91,16 +91,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1dt-bB-HJS">
-                                <rect key="frame" x="56.666666666666657" y="402" width="280" height="48.333333333333314"/>
+                                <rect key="frame" x="20" y="402" width="353" height="48.333333333333314"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hang On! We are getting you verified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKX-ym-Dr6">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="20.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hang On! We are getting you verified" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKX-ym-Dr6">
+                                        <rect key="frame" x="36.666666666666657" y="0.0" width="280" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="gI3-wz-p15">
-                                        <rect key="frame" x="130" y="28.333333333333314" width="20" height="20"/>
+                                        <rect key="frame" x="166.66666666666666" y="28.333333333333314" width="20" height="20"/>
                                     </activityIndicatorView>
                                 </subviews>
                             </stackView>
@@ -109,7 +109,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1dt-bB-HJS" firstAttribute="centerX" secondItem="q1K-PD-3FH" secondAttribute="centerX" id="Wzw-gO-yp7"/>
+                            <constraint firstItem="1dt-bB-HJS" firstAttribute="leading" secondItem="q1K-PD-3FH" secondAttribute="leading" constant="20" id="dZM-df-y43"/>
                             <constraint firstItem="1dt-bB-HJS" firstAttribute="centerY" secondItem="vdT-rD-RD3" secondAttribute="centerY" id="geo-Wp-hch"/>
+                            <constraint firstItem="q1K-PD-3FH" firstAttribute="trailing" secondItem="1dt-bB-HJS" secondAttribute="trailing" constant="20" id="hL7-Zw-4to"/>
                         </constraints>
                     </view>
                     <connections>

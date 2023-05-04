@@ -10,6 +10,9 @@ import Foundation
 class VerificationViewModel {
     let user: User
     var delegate: VerificationViewControllerDelegate?
+    var confirmationSentMsg: String {
+        "Thank you for registering. We have sent a confirmation to \(user.contact ?? "NA")"
+    }
 
     init(user: User) {
         self.user = user

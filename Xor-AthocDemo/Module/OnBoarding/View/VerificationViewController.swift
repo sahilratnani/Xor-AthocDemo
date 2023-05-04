@@ -21,8 +21,13 @@ class VerificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?.delegate = self
+        setup()
         viewModel?.verifyUserInput()
         activityIndicator.startAnimating()
+    }
+
+    func setup() {
+        messageLabel.text = viewModel?.confirmationSentMsg
     }
 }
 
