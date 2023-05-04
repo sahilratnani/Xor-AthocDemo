@@ -22,8 +22,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gco-4o-sDp">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gco-4o-sDp">
+                                <rect key="frame" x="20" y="416" width="353" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,10 +32,11 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gco-4o-sDp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="57s-z4-myG"/>
                             <constraint firstItem="WzY-Yu-Oae" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="6FJ-nc-xzk"/>
                             <constraint firstItem="WzY-Yu-Oae" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="105" id="Myd-mD-UsH"/>
                             <constraint firstItem="gco-4o-sDp" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="VPs-qd-7gL"/>
-                            <constraint firstItem="gco-4o-sDp" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uC8-jJ-pCx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gco-4o-sDp" secondAttribute="trailing" constant="20" id="pOH-bf-gUk"/>
                         </constraints>
                     </view>
                     <connections>
