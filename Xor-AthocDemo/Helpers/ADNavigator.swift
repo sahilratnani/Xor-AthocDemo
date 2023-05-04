@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// App Navigation Class
 class ADNavigator {
     enum ScreenType {
         case verificationScreen
@@ -14,7 +15,9 @@ class ADNavigator {
     }
 
     enum TransitionType {
+        //Set Root View Controller
         case root
+        ///Push the View Controller
         case push
     }
 
@@ -26,6 +29,16 @@ class ADNavigator {
         return window
     }
 
+    /**
+    Make transition to specified View Controller
+
+     - Parameters:
+        - screen: `ScreenType` to navigate on.
+        - transitionType: `TransitionType` for the visual effects and update navigation stack. default is push
+        -  data:  Dictionary<String:Any> containing data to pass on provieded screen
+
+     - Returns: Void
+     */
     class func navigateTo(screen: ScreenType,
                           transitionType: TransitionType = .push,
                           data: [String:Any]? = nil) {
@@ -34,6 +47,7 @@ class ADNavigator {
         makeTransitionToScreen(viewController: viewController, transitionType: transitionType)
     }
 
+    ///Move back to previous View Controller
     class func navigateBack() {
         guard let window = window else {
             assertionFailure("Could not get window for navigation")

@@ -82,9 +82,11 @@ class RegistrationViewController: UIViewController {
 
 extension RegistrationViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
+        //Validate user input
         validateTextField()
     }
 
+    ///Validate user input and update view model
     func validateTextField() {
         let error = viewModel?.validateTextField(string: textField.text)
         errorLabel.isHidden = error == nil

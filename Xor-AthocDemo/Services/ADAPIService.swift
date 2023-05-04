@@ -8,6 +8,7 @@
 import Foundation
 
 class ADAPIService {
+    ///User Verification API call
     class func verifyUserDetails(user: User, completion: @escaping ((Result<Any, Error>)->())) {
         var seconds = 0
         let apiResponseTime = 30

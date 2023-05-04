@@ -7,9 +7,12 @@
 
 import Foundation
 
+///View Model for `VerificationViewController`
 class VerificationViewModel {
     let user: User
     weak var delegate: VerificationViewControllerDelegate?
+
+    ///Confirmation message sent on proveded contact details
     var confirmationSentMsg: String {
         "Thank you for registering. We have sent a confirmation to \(user.contact ?? "NA")"
     }

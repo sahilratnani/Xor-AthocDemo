@@ -7,6 +7,7 @@
 
 import Foundation
 
+///View Model for `RegistrationViewController`
 class RegistrationViewModel {
     let registrationOptions =  ContactType.allCases
     private(set) var selectedOption: ContactType = .phone {
@@ -15,10 +16,12 @@ class RegistrationViewModel {
     }
     private(set) var contact: String?
 
+    ///Returns form state based on fields validation state
     var isFormValid: Bool {
         contact?.isEmpty == false
     }
 
+    ///Update selected option for registration
     func selectRegistrationOption(_ option: ContactType) {
         selectedOption = option
     }
@@ -42,6 +45,7 @@ class RegistrationViewModel {
         return error
     }
 
+    ///Prepare `User` managed object with users input data for verification
     func prepareForSubmission() -> User? {
         guard isFormValid else {
             return nil

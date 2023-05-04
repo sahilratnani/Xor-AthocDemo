@@ -39,6 +39,7 @@ class CoreDataStack {
         return container
     }()
 
+    ///Save the changes in managed context
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {

@@ -17,6 +17,14 @@ class ADDataStore {
 
     private init() { }
 
+    /**
+     Creates New Managed Object of specified type.
+
+     - Parameter type: Managed Object type.
+
+     - Returns: Managed Object of type `type`.
+     */
+
     class func createNewManagedObject<T>(type: T.Type) -> T? where T: NSManagedObject {
         let object = NSEntityDescription.insertNewObject(forEntityName: T.entity().name ?? "", into: moc) as? T
         return object
@@ -30,6 +38,7 @@ class ADDataStore {
         }
     }
 
+     /// Creates New User Managed Object with provided parameters.
     class func createUser(contactType: Int, contact: String?) -> User? {
         let user = createNewManagedObject(type: User.self)
         user?.contactType = Int16(contactType)
@@ -37,6 +46,7 @@ class ADDataStore {
         return user
     }
 
+    ///Fetch User from database
     class func getUser() -> User? {
         do {
             let fetchedUsers = try moc.fetch(User.fetchRequest()) as? [User]

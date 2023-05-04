@@ -7,9 +7,11 @@
 
 import Foundation
 
+///View Model for `DashboardViewController`
 class DashboardViewModel {
     let user: User
 
+    ///Welcome screen message with registration information.
     var displayMsg: String {
         "You are registered with \(user.contactTypeEnum?.text ?? "null") - \(user.contact ?? "null")"
     }

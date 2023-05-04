@@ -11,10 +11,12 @@ struct Rule {
     // Return nil if matches, error message otherwise
     let check: (String) -> String?
 
+    ///Empty value validation rule
     static let notEmpty = Rule(check: {
         return $0.isEmpty ? "Can not be empty" : nil
     })
 
+    ///Email validation rule
     static let validEmail = Rule(check: {
         let regex = #"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}"#
 
@@ -22,6 +24,7 @@ struct Rule {
         return predicate.evaluate(with: $0) ? nil : "Must have valid email"
     })
 
+    ///Phone number validation rule
     static let validPhoneNo = Rule(check: {
         let regex = #"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"#
 

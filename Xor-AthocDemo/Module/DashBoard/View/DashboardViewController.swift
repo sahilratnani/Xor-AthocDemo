@@ -21,6 +21,7 @@ class DashboardViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        //Hide bar as Dashboard becomes the parent view of navigation flow after login.
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }

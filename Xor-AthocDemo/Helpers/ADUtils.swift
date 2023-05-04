@@ -7,6 +7,7 @@
 
 import UIKit
 
+//App Utility class
 class ADUtils {
     class func displayAlert(title: String,
                             message: String,

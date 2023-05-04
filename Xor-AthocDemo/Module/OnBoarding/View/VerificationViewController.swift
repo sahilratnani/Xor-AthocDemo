@@ -7,11 +7,12 @@
 
 import UIKit
 
-
+///Protocol to get the call back in `VerificationViewController`
 protocol VerificationViewControllerDelegate: AnyObject {
     func handleResponse(result: Result<Any, Error>)
 }
 
+/// Verify the registration details with server
 class VerificationViewController: UIViewController {
     var viewModel: VerificationViewModel?
 
@@ -37,6 +38,7 @@ extension VerificationViewController: VerificationViewControllerDelegate {
         if case .success(let user) = result {
             ADNavigator.navigateTo(screen: .dashboard, data: ["user": user])
         } else if case .failure(let error) = result {
+            //Move back to Registration form screen to update details.
             ADUtils.displayAlert(title: "Error", message: error.localizedDescription) {
                 ADNavigator.navigateBack()
             }
