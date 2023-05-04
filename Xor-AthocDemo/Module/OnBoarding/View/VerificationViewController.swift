@@ -8,7 +8,7 @@
 import UIKit
 
 
-protocol VerificationViewControllerDelegate {
+protocol VerificationViewControllerDelegate: AnyObject {
     func handleResponse(result: Result<Any, Error>)
 }
 

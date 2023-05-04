@@ -9,7 +9,7 @@ import Foundation
 
 class VerificationViewModel {
     let user: User
-    var delegate: VerificationViewControllerDelegate?
+    weak var delegate: VerificationViewControllerDelegate?
     var confirmationSentMsg: String {
         "Thank you for registering. We have sent a confirmation to \(user.contact ?? "NA")"
     }
@@ -20,10 +20,11 @@ class VerificationViewModel {
 
     func verifyUserInput() {
         ADAPIService.verifyUserDetails(user: user) { [weak self] result in
+            guard let self = self else { return }
             if case .success(_) = result {
                 ADDataStore.save()
             }
-            self?.delegate?.handleResponse(result: result)
+            self.delegate?.handleResponse(result: result)
         }
     }
 }
