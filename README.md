@@ -2,7 +2,7 @@
 
 ## Overview
 This is the demo project created for AtHoc iOS team. 
-The main intention for this project is to provide the idea on Coding Standards, MVVM architecture, Project Structure.
+The main intention for this project is to provide the idea on Coding Standards, MVVM architecture, Project Structure using simple registration form and welcome dashboard screen.
 
 ## Contents
 
