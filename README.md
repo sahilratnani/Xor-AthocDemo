@@ -14,6 +14,7 @@ The main intention for this project is to provide the idea on Coding Standards, 
   + [Architecture]
   + [Standards]
   + [Project Structure]
+  + [Database]
   + [Documentations and Comments]
 * [Installation]
 * [Usage]
@@ -30,7 +31,8 @@ Design a Registration screen where you have a drop-down, to select from a Phone 
 
 ### Solution
 This demo app shows the Regsitration screen on launch with a menu to select from Phone or Email and textfield to enter the selected data.
-The text field data get validated before being verified and shows the error message if invalid
+The text field data get validated before being verified and shows the error message if invalid. Post verification success user data is stored in database for welcome screen that shows the user data fetched from local database on next launch of app.
+  
 Technical details of this solution is provided below in `Project Details`
 
 ## Requirements
@@ -47,6 +49,9 @@ Swift coding standards are followed to maintain the hydein and clean classes
 
 ### Project Structure
 Each module is separated in group with its corresponding files
+
+### Database
+  To store the user information Coredata is used.
 
 ### Documentations and Comments
 Find the class and method documentation with multiple line and signle line comment.
@@ -72,6 +77,7 @@ Run the application on iOS 15 and above. Enter the Email or Phone number for reg
 [Architecture]: #architecture
 [Standards]: #standards
 [Project Structure]: #project-structure
+[Database]: #database
 [Documentations and Comments]: #documentations-and-comments
 [Installation]: #installation
 [Usage]: #usage
